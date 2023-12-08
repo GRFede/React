@@ -13,7 +13,7 @@ import {
 
 const NavBar = () => {
   return (
-    <div className='NavBar'>
+    <div>
       <Menu>  
         <MenuButton as={Button} >
           Categoria
