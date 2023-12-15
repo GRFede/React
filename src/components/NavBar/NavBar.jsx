@@ -1,19 +1,22 @@
 import React from 'react'
-import CardWidget from './CardWidget'
+import logo from '../../Img/logo-GR.png'
+import './cardWidget/cardWidget'
+import './navBar.css'
 import {
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
   Button,
-  //Flex,
-  //Spacer,
 } from '@chakra-ui/react'
-
+import CardWidget from './CardWidget/CardWidget'
 
 const NavBar = () => {
+
   return (
-    <div>
+    <nav className='navbar'>
+      
+      <a href="#" className='enlace'><img className='logo' src={logo} alt="" /><h1>GRShop</h1></a>
       <Menu>  
         <MenuButton as={Button} >
           Categoria
@@ -24,12 +27,8 @@ const NavBar = () => {
           <MenuItem> Deporte</MenuItem>
         </MenuList>
       </Menu>
-      
-      <CardWidget>
-
-      </CardWidget>
-
-    </div>
+      <CardWidget/>    
+    </nav>
   )
 }
 
