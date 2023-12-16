@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../../Img/logo-GR.png'
-import './cardWidget/cardWidget'
 import './navBar.css'
 import {
   Menu,
