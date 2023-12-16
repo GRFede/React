@@ -6,7 +6,7 @@ const CardWidget = () => {
   const [contador, setContador] = useState (0)
   return (
      <div className='carro'>
-       <img className='logocard' src={card} alt="imagen del carrito" />
+       <a href="#"><img className='logocard' src={card} alt="imagen del carrito" /></a>
        <h1>{contador}</h1>
        <button onClick={() => setContador (contador + 1)}>+</button>
        <button onClick={() => setContador (contador - 1)}>-</button>
