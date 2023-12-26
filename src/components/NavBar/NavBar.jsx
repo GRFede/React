@@ -2,13 +2,7 @@ import React from 'react'
 import CardWidget from '../CardWidget/CardWidget'
 import logo from '../../Img/logo-GR.png'
 import "./navBar.css"
-import {
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    Button,
-    } from '@chakra-ui/react'
+import {Menu,MenuButton,MenuList,MenuItem,Button,} from '@chakra-ui/react'
 
 
 const NavBar = () => {
