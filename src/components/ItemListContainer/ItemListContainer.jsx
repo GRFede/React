@@ -32,6 +32,7 @@ mostrarproductos
   return (
     <div className="item">
       <ItemList producto={productos}/>
+      
     </div>
   )
 }
