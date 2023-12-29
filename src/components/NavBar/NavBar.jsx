@@ -12,27 +12,29 @@ const NavBar = () => {
 
     <nav className='navbar'>
 
-        <a href="" className='enlace'><img className='logo' src={logo} alt="" /><h1>GRShop</h1></a>
-
-
+        <a href="/" className='enlace'><img className='logo' src={logo} alt="" /><h1>GRShop</h1></a>
+        <Link to={"/"}>
+        <p>Este es el incio de mi negocio</p>
+        </Link>
         <Menu>  
         <MenuButton as={Button} >
-        Categoria
+        Categorias
         </MenuButton>
         <MenuList> 
-        <Link to = {"/"}>
-        <MenuItem> Inicio </MenuItem>
+        <Link to = {"/categorias/A"}>
+        <MenuItem> Categoria A </MenuItem>
         </Link>
-        <Link to = {"/productos"}>
-        <MenuItem> Productos</MenuItem>
+        <Link to = {"/categorias/B"}>
+        <MenuItem> Categorias B</MenuItem>
         </Link>
-        <Link to = {"/Detallesdeproductos"}> 
-        <MenuItem> Detalles de productos</MenuItem>
+        <Link to = {"/categorias/C"}> 
+        <MenuItem> Categorias C</MenuItem>
         </Link>
         </MenuList>
         </Menu> 
-
+        <Link to = {"/cart"}> 
         <CardWidget/>
+        </Link>
 
 
     </nav>

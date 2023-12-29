@@ -1,8 +1,9 @@
 import React from 'react'
 import{Card,CardBody,Stack,Heading,Divider,CardFooter,ButtonGroup, Button} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 
-const Item = ({titulo}) => {
+const Item = ({titulo, id}) => {
   return (
     <Card maxW='sm'>
   <CardBody>
@@ -14,7 +15,9 @@ const Item = ({titulo}) => {
   <CardFooter>
     <ButtonGroup spacing='2'>
       <Button>
+    <Link to={`/producto/${id}`}> 
         Ver detalles
+      </Link>
       </Button>
     </ButtonGroup>
   </CardFooter>

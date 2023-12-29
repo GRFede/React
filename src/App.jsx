@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Inicio from './components/Inicio/Inicio'
+import CardWidget from './Components/CardWidget/CardWidget'
 
 
 const App = () => {
@@ -15,11 +16,13 @@ const App = () => {
 
     <Routes>
 
-    <Route exact path= '/' element ={<Inicio/>}/>
+    <Route path= '/' element ={<Inicio/>}/>
 
-    <Route exact path= '/productos' element ={<ItemListContainer/>}/>
+    <Route path= '/cart' element ={<CardWidget/>}/>
 
-    <Route exact path= '/Detallesdeproductos' element ={<ItemDetailContainer/>}/>
+    <Route exact path= '/categorias/:categoriaId' element ={<ItemListContainer/>}/>
+
+    <Route exact path= '/producto/:id' element ={<ItemDetailContainer/>}/>
     
 
     </Routes>
